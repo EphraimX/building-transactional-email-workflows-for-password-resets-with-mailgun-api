@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ff4d4d;
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 1rem;
+    background: #e60000;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 4rem 2rem;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background: white;
+    color: black;
+}
+
+.feature {
+    max-width: 300px;
+}
+
+.testimonials {
+    padding: 3rem;
+    background: #e60000;
+}
+
+.testimonial {
+    margin: 1rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: white;
+    color: #ff4d4d;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #ccc;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #e60000;
+    width: 100%;
+    text-align: center;
+}
