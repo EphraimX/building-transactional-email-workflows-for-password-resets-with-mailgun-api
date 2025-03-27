@@ -87,7 +87,7 @@ async def reset_password(request: Request, email_address: str = Form(...)):
                     "login.html",
                     {
                         "request": request,
-                        "message": "Kindly check your email to kindly reset your password",
+                        "message": "Kindly check your email to reset your password.",
                     },
                 )
 
@@ -97,7 +97,7 @@ async def reset_password(request: Request, email_address: str = Form(...)):
                     "passwordReset.html",
                     {
                         "request": request,
-                        "message": "Unfortunately, we ran into an error while trying to reset your password, kindly try again. If issue persists, please contact support",
+                        "message": "Unfortunately, we ran into an error while trying to reset your password. Kindly try again, and if the issue persists, please contact support.",
                     },
                 )
 
@@ -106,7 +106,7 @@ async def reset_password(request: Request, email_address: str = Form(...)):
         "passwordReset.html",
         {
             "request": request,
-            "message": "Unfortunately, we do not have record of your email, kindly reach out to the site admiinistrator.",
+            "message": "Unfortunately, we do not have a record of your email. Kindly reach out to the site administrator.",
         },
     )
 
