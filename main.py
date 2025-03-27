@@ -111,6 +111,24 @@ async def reset_password(request: Request, email_address: str = Form(...)):
     )
 
 
+async def send_simple_message(API_KEY):
+    response = requests.post(
+        "https://api.mailgun.net/v3/<SANDBOX_URL>/messages",
+        auth=("api", f"{API_KEY}"),
+        data={"from": "Mailgun Sandbox <postmaster@<SANDBOX_URL>>",
+              "to": "<RECIPIENT_NAME> <RECIPIENT_EMAIL>",
+              "subject": "Hello <RECIPIENT_NAME>",
+              "text": "Congratulations <RECIPIENT_NAME>, you just sent an email with Mailgun! You are truly awesome!"
+              }
+    )
+
+    print(response.json())
+    return response
+
+
+#send_simple_message("your-api-key-here")
+
+
 async def send_password_reset_email(username, email_address, reset_link):
 
     API_KEY = os.getenv("API_KEY")  # Fetch API key from environment
