@@ -25,5 +25,11 @@ This repository provides an instructional guide and code for setting up transact
 - `users.json`: Sample user data for the email workflow.
 - `requirements.txt`: Python dependencies.
 
+## 📄 Reference Article
+
+Here's an article providing detailed steps on how to build this:
+
+🔗 [How to Build Transactional Password Reset Email Workflows](https://www.mailgun.com/blog/dev-life/how-to-build-transactional-password-reset-email-workflows/)
+
 ## Contributions:
 Feel free to fork the repo and submit issues or pull requests.
